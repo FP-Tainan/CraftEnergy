@@ -3,11 +3,17 @@
   "id": "craftenergy",
   "version": "${version}",
   "name": "Craft Energy",
-  "description": "Sistema de energia elétrica compartilhado para mods industriais: CW (Craft Watts), MV (Mine Volts), RA (Red Ampères) e CWh.",
+  "description": "Sistema de energia elétrica compartilhado para mods industriais: CW (Craft Watts), MV (Mine Volts), RA (Red Ampères) e CWh.\n\nCriador: Tainan Fermino Peres\nGitHub: https://github.com/FP-Tainan/CraftEnergy",
   "authors": [
     "Tainan Fermino Peres"
   ],
+  "contact": {
+    "homepage": "https://github.com/FP-Tainan/CraftEnergy",
+    "sources": "https://github.com/FP-Tainan/CraftEnergy",
+    "issues": "https://github.com/FP-Tainan/CraftEnergy/issues"
+  },
   "license": "All Rights Reserved",
+  "icon": "assets/craftenergy/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
