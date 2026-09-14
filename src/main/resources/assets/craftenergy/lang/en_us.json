@@ -51,5 +51,7 @@
   "item.craftenergy.rubber_wood": "Rubber Wood",
   "item.craftenergy.rubber_wood_planks": "Rubber Wood Planks",
   "item.craftenergy.tin_ore": "Tin Ore",
-  "item.craftenergy.treetap": "Treetap"
+  "item.craftenergy.treetap": "Treetap",
+  "item.craftenergy.multimeter": "Multimeter",
+  "tooltip.craftenergy.multimeter": "Hold it (or put it in the shield slot) and look at cables and machines"
 }

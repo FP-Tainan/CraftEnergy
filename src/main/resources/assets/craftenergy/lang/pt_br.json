@@ -49,5 +49,7 @@
   "item.craftenergy.rubber_sapling": "Muda de Seringueira",
   "item.craftenergy.rubber_wood": "Tábua de Seringueira",
   "item.craftenergy.tin_ore": "Minério de Estanho",
-  "item.craftenergy.treetap": "Torneira de Madeira"
+  "item.craftenergy.treetap": "Torneira de Madeira",
+  "item.craftenergy.multimeter": "Multímetro",
+  "tooltip.craftenergy.multimeter": "Segure (ou coloque no slot do escudo) e olhe para cabos e máquinas"
 }

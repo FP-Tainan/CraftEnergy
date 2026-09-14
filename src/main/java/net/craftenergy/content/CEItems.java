@@ -1,6 +1,7 @@
 package net.craftenergy.content;
 
 import net.craftenergy.content.item.DamageableCraftingToolItem;
+import net.craftenergy.content.item.MultimeterItem;
 import net.craftenergy.content.item.TreetapItem;
 import net.craftenergy.fabric.CraftEnergyApi;
 import net.craftenergy.registry.DeferredRegister;
@@ -58,6 +59,11 @@ public final class CEItems {
             () -> new DamageableCraftingToolItem(new Item.Properties().setId(ITEMS.key("cutter")).durability(50)));
     public static final RegistryObject<DamageableCraftingToolItem> HAMMER = ITEMS.register("hammer",
             () -> new DamageableCraftingToolItem(new Item.Properties().setId(ITEMS.key("hammer")).durability(100)));
+
+    // ── instrumentos ──────────────────────────────────────────────────────
+    /** Multímetro: mostra MV, RA, CW e temperatura dos cabos e as leituras de máquinas de qualquer mod. */
+    public static final RegistryObject<MultimeterItem> MULTIMETER = ITEMS.register("multimeter",
+            () -> new MultimeterItem(new Item.Properties().setId(ITEMS.key("multimeter"))));
 
     private CEItems() {}
 

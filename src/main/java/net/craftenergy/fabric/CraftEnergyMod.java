@@ -1,6 +1,9 @@
 package net.craftenergy.fabric;
 
 import net.craftenergy.content.CraftEnergyContent;
+import net.craftenergy.content.item.MultimeterItem;
+import net.craftenergy.network.MultimeterReadingPayload;
+import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerBlockEntityEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerChunkEvents;
@@ -16,6 +19,10 @@ public final class CraftEnergyMod implements ModInitializer {
     @Override
     public void onInitialize() {
         CraftEnergyContent.init();
+
+        // multímetro: leituras enviadas ao cliente que está segurando o aparelho
+        PayloadTypeRegistry.clientboundPlay().register(MultimeterReadingPayload.TYPE, MultimeterReadingPayload.CODEC);
+        MultimeterItem.init();
 
         ServerTickEvents.END_LEVEL_TICK.register(EnergyNetworkManager::tickLevel);
         ServerChunkEvents.CHUNK_UNLOAD.register((level, chunk) -> EnergyNetworkManager.onChunkUnload(level, chunk.getPos()));

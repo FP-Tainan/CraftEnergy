@@ -18,6 +18,9 @@
   "entrypoints": {
     "main": [
       "net.craftenergy.fabric.CraftEnergyMod"
+    ],
+    "client": [
+      "net.craftenergy.fabric.CraftEnergyClient"
     ]
   },
   "depends": {
