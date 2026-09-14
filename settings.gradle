@@ -1,0 +1,17 @@
+// Usado só quando o Craft Energy é compilado sozinho. Dentro do IC2 Reborn (submódulo),
+// vale o settings.gradle do projeto principal.
+pluginManagement {
+    repositories {
+        maven {
+            name = 'Fabric'
+            url = 'https://maven.fabricmc.net/'
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    plugins {
+        id 'net.fabricmc.fabric-loom' version "${loom_version}"
+    }
+}
+
+rootProject.name = 'craftenergy'
